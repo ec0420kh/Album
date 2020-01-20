@@ -1,0 +1,62 @@
+/* ヘッダー色を変更 */
+.bg-dark {
+    background-color: #b7193f!important;
+}
+
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    /* 背景画像の挿入 */
+    background-image: url(https://toto-pensando.com/wp-content/uploads/2020/01/library2.jpg);
+    /* 画像一の調整 */
+    background-position: bottom center;
+}
+
+/* フォントサイズや色、背景のブロックの色を変える */
+.jumbotron p {
+    color: white!important;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.jumbotron .container {
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.jumbotron .container h1 {
+    font-family: sans-serif;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        /* 余白（パディング）を変更する */
+        padding-top: calc(var(--jumbotron-padding-y) * 6);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 6);
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
